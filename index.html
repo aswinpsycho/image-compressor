@@ -9,11 +9,15 @@
 <body>
     <div class="container">
         <h1>Image Compressor</h1>
-        <input type="file" id="upload" accept="image/*">
-        <label for="quality">Compression Quality (0.1 - 1):</label>
-        <input type="number" id="quality" min="0.1" max="1" step="0.1" value="0.7">
+        <input type="file" id="upload" accept="image/*" class="custom-file-input">
+        <label for="size">Desired Size:</label>
+        <input type="number" id="size" min="1" placeholder="Enter size in KB or MB" class="custom-input">
+        <select id="size-unit" class="custom-select">
+            <option value="KB">KB</option>
+            <option value="MB">MB</option>
+        </select>
         <div id="output"></div>
-        <a id="download" style="display:none;">Download Compressed Image</a>
+        <a id="download" style="display:none;" class="btn">Download Compressed Image</a>
     </div>
     <script src="script.js"></script>
 </body>
