@@ -4,35 +4,44 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: #f0f0f0;
-    font-family: Arial, sans-serif;
+    background: url('https://www.wallpaperflare.com/static/13/960/674/books-shelves-pages-library-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
     text-align: center;
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
 }
 
-input[type="file"],
-input[type="number"] {
+h1 {
     margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
 }
 
-#output {
-    margin: 20px 0;
-}
-
-#download {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+.custom-file-input,
+.custom-input,
+.custom-select,
+.btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1em;
 }
+
+.custom-file-input {
+    cursor: pointer;
+    color: #444;
+}
+
+.custom-input {
+    font-size: 1em
+
